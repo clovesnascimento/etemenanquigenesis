@@ -1,0 +1,66 @@
+<svg width="520" height="520" viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <style>
+    .tier  { fill: #F1EFE8; stroke: #888780; }
+    .accent { fill: #EF9F27; }
+    .shadow-line { stroke: #D3D1C7; stroke-width: 0.5; }
+    .label-main { font-family: system-ui, sans-serif; font-size: 28px; font-weight: 500; fill: #2C2C2A; }
+    .label-sub  { font-family: ui-monospace, monospace; font-size: 11px; font-weight: 400; fill: #5F5E5A; letter-spacing: 0.18em; }
+    .label-org  { font-family: system-ui, sans-serif;  font-size: 11px; font-weight: 400; fill: #888780; letter-spacing: 0.08em; }
+
+    @media (prefers-color-scheme: dark) {
+      .tier       { fill: #2C2C2A; stroke: #5F5E5A; }
+      .shadow-line { stroke: #444441; }
+      .label-main { fill: #F1EFE8; }
+      .label-sub  { fill: #B4B2A9; }
+      .label-org  { fill: #888780; }
+    }
+  </style>
+</defs>
+
+<!-- Tier 6 — base -->
+<rect class="tier" x="210" y="360" width="260" height="36" rx="3" stroke-width="0.8"/>
+<line class="shadow-line" x1="212" y1="395" x2="468" y2="395"/>
+
+<!-- Tier 5 -->
+<rect class="tier" x="228" y="322" width="224" height="38" rx="3" stroke-width="0.8"/>
+<line class="shadow-line" x1="230" y1="359" x2="450" y2="359"/>
+
+<!-- Tier 4 -->
+<rect class="tier" x="248" y="284" width="184" height="38" rx="3" stroke-width="0.8"/>
+<line class="shadow-line" x1="250" y1="321" x2="430" y2="321"/>
+
+<!-- Tier 3 -->
+<rect class="tier" x="270" y="248" width="140" height="36" rx="3" stroke-width="0.8"/>
+<line class="shadow-line" x1="272" y1="283" x2="408" y2="283"/>
+
+<!-- Tier 2 -->
+<rect class="tier" x="294" y="214" width="92"  height="34" rx="3" stroke-width="0.8"/>
+<line class="shadow-line" x1="296" y1="247" x2="384" y2="247"/>
+
+<!-- Tier 1 — top chamber -->
+<rect class="tier" x="316" y="182" width="48"  height="32" rx="3" stroke-width="0.8"/>
+<line class="shadow-line" x1="318" y1="213" x2="362" y2="213"/>
+
+<!-- Capstone / flame -->
+<polygon class="accent" points="340,152 330,182 350,182" opacity="0.9"/>
+<polygon points="340,158 334,182 346,182" fill="#F1EFE8" opacity="0.4"/>
+
+<!-- Center plumb line -->
+<line x1="340" y1="396" x2="340" y2="440" stroke="#D3D1C7" stroke-width="0.5" stroke-dasharray="3 3"/>
+
+<!-- Step marks — architectural detail -->
+<line x1="468" y1="360" x2="452" y2="360" stroke="#D3D1C7" stroke-width="0.5"/>
+<line x1="452" y1="322" x2="436" y2="322" stroke="#D3D1C7" stroke-width="0.5"/>
+<line x1="432" y1="284" x2="416" y2="284" stroke="#D3D1C7" stroke-width="0.5"/>
+<line x1="410" y1="248" x2="396" y2="248" stroke="#D3D1C7" stroke-width="0.5"/>
+<line x1="386" y1="214" x2="374" y2="214" stroke="#D3D1C7" stroke-width="0.5"/>
+
+<!-- Rule -->
+<line x1="200" y1="442" x2="480" y2="442" stroke="#D3D1C7" stroke-width="0.5"/>
+
+<!-- Typography -->
+<text class="label-main" x="340" y="460" text-anchor="middle">Etemenanqui</text>
+<text class="label-sub"  x="340" y="482" text-anchor="middle">LINGUAGEM DE PROTOCOLO · MODELO B</text>
+<text class="label-org"  x="340" y="504" text-anchor="middle">CNGSM · Cloves Nascimento · 2026</text>
+</svg>

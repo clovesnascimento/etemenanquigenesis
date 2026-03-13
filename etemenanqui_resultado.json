@@ -1,0 +1,51 @@
+{
+  "corpus_a": {
+    "label": "Inglês (baseline)",
+    "char_count": 562,
+    "word_count": 88,
+    "shannon_entropy_char": 4.3567471968806935,
+    "shannon_entropy_word": 5.79018328921024,
+    "bits_per_char": 4.3567471968806935,
+    "gzip_bytes_original": 562,
+    "gzip_bytes_compressed": 344,
+    "gzip_ratio": 0.6120996441281139,
+    "bpe_token_count": 115,
+    "bpe_chars_per_token": 4.886956521739131
+  },
+  "corpus_b": {
+    "label": "Etemenanqui (placeholder)",
+    "char_count": 248,
+    "word_count": 59,
+    "shannon_entropy_char": 4.234321538081999,
+    "shannon_entropy_word": 5.747049829022859,
+    "bits_per_char": 4.234321538081999,
+    "gzip_bytes_original": 250,
+    "gzip_bytes_compressed": 199,
+    "gzip_ratio": 0.796,
+    "bpe_token_count": 122,
+    "bpe_chars_per_token": 2.0327868852459017
+  },
+  "gaps": [
+    {
+      "metrica": "Shannon (char)",
+      "valor_a": 4.3567471968806935,
+      "valor_b": 4.234321538081999,
+      "ratio_b_over_a": 0.9718997561101669,
+      "interpretacao": "Entropia menor, mas sem estrutura explorável. Raízes aleatórias."
+    },
+    {
+      "metrica": "gzip ratio",
+      "valor_a": 0.6120996441281139,
+      "valor_b": 0.796,
+      "ratio_b_over_a": 1.3004418604651162,
+      "interpretacao": "Entropia menor, mas sem estrutura explorável. Raízes aleatórias."
+    },
+    {
+      "metrica": "BPE tokens",
+      "valor_a": 115,
+      "valor_b": 122,
+      "ratio_b_over_a": 1.0608695652173914,
+      "interpretacao": "Entropia menor, mas sem estrutura explorável. Raízes aleatórias."
+    }
+  ]
+}
