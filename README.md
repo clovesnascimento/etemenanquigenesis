@@ -185,6 +185,6 @@ Os dados respondem: o Etemenanqui carrega menos bits de informação por token q
 
 *Cloves Nascimento — Arquiteto de Ecossistemas Cognitivos*
 
-*Fundado em 13 de março de 2026*
+*Etemenanqui - Criado em 13 de março de 2026*
 
 </div>
