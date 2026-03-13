@@ -1,0 +1,24 @@
+[project]
+name = "etemenanqui-mcp"
+version = "1.0.0"
+description = "Etemenanqui Cognitive Compression Protocol — MCP Server"
+authors = [{ name = "Cloves Nascimento", email = "cngsm@etemenanqui.dev" }]
+license = { text = "MIT" }
+readme = "README_MCP.md"
+requires-python = ">=3.10"
+keywords = ["mcp", "llm", "compression", "tokens", "etemenanqui", "ai"]
+
+dependencies = [
+    "mcp[cli]>=1.0.0",
+    "pydantic>=2.0.0",
+]
+
+[project.scripts]
+etemenanqui-mcp = "server:mcp.run"
+
+[project.urls]
+Repository = "https://github.com/clovesnascimento/etemenanqui"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
