@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+<rect width="500" height="500" fill="#0A0C0E"/>
+<defs>
+  <linearGradient id="beam" x1="0%" y1="100%" x2="0%" y2="0%">
+    <stop offset="0%"   stop-color="#EF9F27" stop-opacity="0.7"/>
+    <stop offset="100%" stop-color="#FCDE5A" stop-opacity="0.0"/>
+  </linearGradient>
+  <linearGradient id="blockGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%"   stop-color="#1C1608"/>
+    <stop offset="100%" stop-color="#110E05"/>
+  </linearGradient>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="2.5" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+
+<polygon points="247,345 253,345 253,75 247,75" fill="url(#beam)"/>
+
+<rect x="100" y="340" width="300" height="26" rx="2" fill="url(#blockGrad)" stroke="#EF9F27" stroke-width="1.2"/>
+<line x1="142" y1="340" x2="142" y2="366" stroke="#EF9F27" stroke-width="1" stroke-opacity="0.4"/>
+<line x1="185" y1="340" x2="185" y2="366" stroke="#EF9F27" stroke-width="1" stroke-opacity="0.4"/>
+<line x1="228" y1="340" x2="228" y2="366" stroke="#EF9F27" stroke-width="1" stroke-opacity="0.4"/>
+<line x1="271" y1="340" x2="271" y2="366" stroke="#EF9F27" stroke-width="1" stroke-opacity="0.4"/>
+<line x1="314" y1="340" x2="314" y2="366" stroke="#EF9F27" stroke-width="1" stroke-opacity="0.4"/>
+<line x1="357" y1="340" x2="357" y2="366" stroke="#EF9F27" stroke-width="1" stroke-opacity="0.4"/>
+
+<rect x="130" y="300" width="240" height="26" rx="2" fill="url(#blockGrad)" stroke="#EF9F27" stroke-width="1.3"/>
+<line x1="178" y1="300" x2="178" y2="326" stroke="#EF9F27" stroke-width="1" stroke-opacity="0.5"/>
+<line x1="226" y1="300" x2="226" y2="326" stroke="#EF9F27" stroke-width="1" stroke-opacity="0.5"/>
+<line x1="274" y1="300" x2="274" y2="326" stroke="#EF9F27" stroke-width="1" stroke-opacity="0.5"/>
+<line x1="322" y1="300" x2="322" y2="326" stroke="#EF9F27" stroke-width="1" stroke-opacity="0.5"/>
+
+<rect x="160" y="260" width="180" height="26" rx="2" fill="url(#blockGrad)" stroke="#F2A623" stroke-width="1.4"/>
+<line x1="220" y1="260" x2="220" y2="286" stroke="#F2A623" stroke-width="1" stroke-opacity="0.6"/>
+<line x1="280" y1="260" x2="280" y2="286" stroke="#F2A623" stroke-width="1" stroke-opacity="0.6"/>
+
+<rect x="190" y="220" width="120" height="26" rx="2" fill="url(#blockGrad)" stroke="#F2A623" stroke-width="1.5"/>
+<line x1="250" y1="220" x2="250" y2="246" stroke="#F2A623" stroke-width="1" stroke-opacity="0.7"/>
+
+<rect x="220" y="180" width="60" height="26" rx="2" fill="url(#blockGrad)" stroke="#FCDE5A" stroke-width="1.6"/>
+
+<circle cx="250" cy="138" r="9"  fill="#FCDE5A" filter="url(#glow)"/>
+<circle cx="250" cy="138" r="18" fill="none" stroke="#EF9F27" stroke-width="1.4" stroke-dasharray="4 4">
+  <animateTransform attributeName="transform" type="rotate"
+    from="0 250 138" to="360 250 138" dur="8s" repeatCount="indefinite"/>
+</circle>
+<circle cx="250" cy="138" r="28" fill="none" stroke="#BA7517" stroke-width="0.8" stroke-dasharray="2 6">
+  <animateTransform attributeName="transform" type="rotate"
+    from="360 250 138" to="0 250 138" dur="14s" repeatCount="indefinite"/>
+</circle>
+
+<text x="250" y="418"
+  font-family="monospace, sans-serif" font-size="27" font-weight="bold"
+  fill="#F2A623" text-anchor="middle" letter-spacing="5">ETEMENANQUI</text>
+<text x="250" y="442"
+  font-family="monospace, sans-serif" font-size="10" fill="#BA7517"
+  text-anchor="middle" letter-spacing="3">COGNITIVE COMPRESSION PROTOCOL</text>
+<text x="250" y="460"
+  font-family="monospace, sans-serif" font-size="9" fill="#444120"
+  text-anchor="middle" letter-spacing="1">CNGSM · CLOVES NASCIMENTO · 2026</text>
+</svg>

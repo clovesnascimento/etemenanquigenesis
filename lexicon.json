@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "model": "B",
+    "inventory": {
+      "consonants": ["t","k","n","m","s","v","l","r","z","b"],
+      "vowels": ["a","e","i","o"]
+    },
+    "root_structure": "CVC",
+    "max_markers": 2,
+    "max_word_length": 7
+  },
+  "roots": {
+    "system": {
+      "ran": {"gloss": "executar/rodar",     "domain": "system"},
+      "kal": {"gloss": "chamar/invocar",     "domain": "system"},
+      "set": {"gloss": "definir/configurar", "domain": "system"},
+      "ven": {"gloss": "verificar/validar",  "domain": "system"},
+      "ret": {"gloss": "retornar",           "domain": "system"},
+      "bol": {"gloss": "bloco",              "domain": "system"},
+      "vaz": {"gloss": "fase/estágio",       "domain": "system"},
+      "sok": {"gloss": "escopo",             "domain": "system"},
+      "tar": {"gloss": "tarefa",             "domain": "system"},
+      "res": {"gloss": "resultado",          "domain": "system"},
+      "sis": {"gloss": "sistema",            "domain": "system"},
+      "rak": {"gloss": "arquitetura",        "domain": "system"}
+    },
+    "memory_cache": {
+      "mem": {"gloss": "memória",            "domain": "memory"},
+      "kak": {"gloss": "cache",              "domain": "memory"},
+      "kev": {"gloss": "chave/key",          "domain": "memory"},
+      "ver": {"gloss": "versão",             "domain": "memory"},
+      "bin": {"gloss": "binário",            "domain": "memory"},
+      "nib": {"gloss": "entrada/input",      "domain": "memory"},
+      "tov": {"gloss": "saída/output",       "domain": "memory"}
+    },
+    "tokens_encoding": {
+      "tok": {"gloss": "token",              "domain": "encoding"},
+      "bit": {"gloss": "bit/unidade",        "domain": "encoding"},
+      "sem": {"gloss": "semântico",          "domain": "encoding"},
+      "sek": {"gloss": "sequência",          "domain": "encoding"},
+      "nek": {"gloss": "nó/node",            "domain": "encoding"},
+      "nik": {"gloss": "nível",              "domain": "encoding"},
+      "raz": {"gloss": "razão/ratio",        "domain": "encoding"},
+      "tam": {"gloss": "tamanho",            "domain": "encoding"}
+    },
+    "analysis_validation": {
+      "nal": {"gloss": "analisar",           "domain": "analysis"},
+      "tes": {"gloss": "testar",             "domain": "analysis"},
+      "baz": {"gloss": "base/fundação",      "domain": "analysis"},
+      "kom": {"gloss": "comparar",           "domain": "analysis"},
+      "sel": {"gloss": "selecionar",         "domain": "analysis"},
+      "zor": {"gloss": "ordenar/sort",       "domain": "analysis"},
+      "mer": {"gloss": "mesclar",            "domain": "analysis"},
+      "kol": {"gloss": "coletar/agregar",    "domain": "analysis"},
+      "lim": {"gloss": "limite",             "domain": "analysis"}
+    },
+    "structure_morphology": {
+      "tez": {"gloss": "estrutura",          "domain": "structure"},
+      "mob": {"gloss": "módulo",             "domain": "structure"},
+      "neb": {"gloss": "dependência",        "domain": "structure"},
+      "lis": {"gloss": "lista",              "domain": "structure"},
+      "nov": {"gloss": "nó-dado",            "domain": "structure"},
+      "kor": {"gloss": "núcleo/core",        "domain": "structure"}
+    },
+    "cognition": {
+      "bav": {"gloss": "planejar",           "domain": "cognition"},
+      "sol": {"gloss": "resolver",           "domain": "cognition"},
+      "rev": {"gloss": "revisar",            "domain": "cognition"},
+      "tot": {"gloss": "otimizar",           "domain": "cognition"},
+      "tek": {"gloss": "técnico",            "domain": "cognition"},
+      "ler": {"gloss": "ler/processar",      "domain": "cognition"}
+    },
+    "output_reporting": {
+      "loz": {"gloss": "registrar/log",      "domain": "output"},
+      "var": {"gloss": "variável",           "domain": "output"},
+      "val": {"gloss": "validar",            "domain": "output"},
+      "san": {"gloss": "sanitizar",          "domain": "output"},
+      "viz": {"gloss": "visualizar",         "domain": "output"}
+    }
+  },
+  "markers": {
+    "case": {
+      "o":  "AGENTE (sujeito)",
+      "a":  "OBJETO (acusativo)",
+      "e":  "DATIVO (para/beneficiário)",
+      "i":  "GENITIVO (de/posse)"
+    },
+    "tense": {
+      "ta": "PASSADO",
+      "so": "PRESENTE (default, omissível)",
+      "ki": "FUTURO"
+    },
+    "number": {
+      "me": "PLURAL",
+      "re": "DUAL"
+    },
+    "modality": {
+      "zi": "NEGAÇÃO",
+      "bo": "INTERROGATIVO",
+      "vi": "IMPERATIVO",
+      "na": "CONDICIONAL"
+    },
+    "degree": {
+      "li": "AUMENTATIVO",
+      "si": "DIMINUTIVO"
+    },
+    "derivation": {
+      "ba": "NOMINALIZADOR (ação → substantivo)",
+      "ka": "AGENTIVO (raiz → quem faz)",
+      "mo": "QUALITATIVO (raiz → qualidade)"
+    }
+  },
+  "fonotactic_rules": [
+    "Raízes devem seguir estrutura CVC estrita",
+    "Marcadores são V (1 char) ou CV (2 chars)",
+    "Máximo de 2 marcadores por raiz",
+    "Comprimento máximo de palavra: 7 caracteres",
+    "Proibido: clusters consonantais (CC)",
+    "Proibido: ditongos (VV)",
+    "Todos os caracteres devem pertencer ao inventário H2",
+    "Sem delimitadores entre raiz e marcadores (fusão direta)"
+  ]
+}
