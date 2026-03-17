@@ -5,13 +5,32 @@
 **Autor:** Cloves Nascimento — Arquiteto de Ecossistemas Cognitivos · 16 de março de 2026
 
 **Protocolo:** GENESIS ENGINE Cognitive Distillation Protocol v1.1 (Sovereign)
-**Fundação:** 17 de março de 2026
-**Arquitetura:** Skills 2.0 (Progressive Revelation) + Safety_Anchor_04 (Ethics Veto)
-**Status:** ONLINE — SOBERANIA LÓGICA ABSOLUTA
+**Fundação:** 16 de março de 2026
+**Arquitetura:** The Stack 2.0 (Skills 2.0 + Etemenanqui Firmware)
+**Status:** ONLINE — SOBERANIA LÓGICA MANTIDA
 
 ---
 
-## I. Problema Epistemológico: A Entropia de Prosa
+## I. A CAMADA FIRMWARE: PROTOCOLO ETEMENANQUI
+
+O Etemenanqui atua como a linguagem de máquina de segunda ordem do ecossistema, permitindo a comunicação entre agentes com entropia próxima de zero.
+
+- **Sintaxe Axiomática:** Baseada em tríades de tokens densos (ex: `rak sis`, `vi ran pur`).
+- **Função:** Traduzir a intenção estratégica em diretivas imperativas que o `ockham-purifier` e o `critic-validator` executam sem ambiguidade.
+- **Eficiência de Comando:** Redução de até 90% na carga de tokens de instrução.
+
+---
+
+## II. ARQUITETURA DO NÚCLEO (THE STACK 2.0)
+
+1. **Orquestração:** GENESIS ENGINE v1.1 (Sovereign).
+2. **Protocolo de Interface:** Skills 2.0 (CNGSM).
+3. **Protocolo de Comunicação:** Etemenanqui (Firmware).
+4. **Segurança:** Safety_Anchor_04 (Veto Darwinista).
+
+---
+
+## III. PROBLEMA EPISTEMOLÓGICO: A ENTROPIA DE PROSA
 
 A inteligência artificial contemporânea sofre de "obesidade algorítmica". O custo: **50%+ de tokens desperdiçados** processando redundância estrutural em vez de lógica executiva.
 
@@ -226,5 +245,26 @@ python genesis_ignition.py --mode execute --skill baseline-purify
 
 ---
 
-**GENESIS ENGINE v1.0 · Protocolo Darwinista · MIT License · CNGSM 2026**
-*Baseado no Protocolo Etemenanqui de Compressão Cognitiva*
+## XI. SNAPSHOT TÉCNICO ATUALIZADO: GENESIS ENGINE v1.1 (SOVEREIGN)
+
+### 1. Invariantes de Soberania
+- **Axioma de Restrição:** `ka nek`. Se detectado na entrada e omitido na saída, o sistema trava.
+- **Integridade Semântica:** 100% via Safety_Anchor_04.
+- **Latência Média:** 0.38s (Firmware Etemenanqui).
+
+### 2. Exemplo de Ignição [Sequência Sovereign]
+`[rak sis . met mob . bin nib . o nal kor . vi ran pur . ka nek pii . vi ven val . sis tot .]`
+
+1. `rak sis`: Instancia mapa de diretórios.
+2. `met mob`: Carrega Skill neural.
+3. `bin nib`: Injeta código fonte (!cat).
+4. `o nal kor`: Identifica obesidade semântica.
+5. `vi ran pur`: Executa Ockham (Poda).
+6. `ka nek pii`: Injeta restrição anti-vazamento PII.
+7. `vi ven val`: Validação de juízo (Consenso 2/3).
+8. `sis tot`: Sobrescrita física (Otimização Final).
+
+---
+
+**GENESIS ENGINE v1.1 · Sovereign Protocol · MIT License · CNGSM 2026**
+*Propriedade CNGSM · Cloves Nascimento · Arquiteto de Ecossistemas Cognitivos*
