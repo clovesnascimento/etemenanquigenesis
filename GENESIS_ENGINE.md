@@ -255,16 +255,19 @@ python genesis_ignition.py --mode execute --skill baseline-purify
 ### 2. Exemplo de Ignição [Sequência Sovereign]
 `[rak sis . met mob . bin nib . o nal kor . vi ran pur . ka nek pii . vi ven val . sis tot .]`
 
-1. `rak sis`: Instancia mapa de diretórios.
-2. `met mob`: Carrega Skill neural.
-3. `bin nib`: Injeta código fonte (!cat).
-4. `o nal kor`: Identifica obesidade semântica.
-5. `vi ran pur`: Executa Ockham (Poda).
-6. `ka nek pii`: Injeta restrição anti-vazamento PII.
-7. `vi ven val`: Validação de juízo (Consenso 2/3).
-8. `sis tot`: Sobrescrita física (Otimização Final).
+**Fluxo de Execução Deconstruído:**
+1. `rak sis` (Arquitetura): Instancia mapa de diretórios e define escopo (/src/auth).
+2. `met mob` (Módulo): Carrega Skill de refatoração neural.
+3. `bin nib` (Compilar): Injeta código fonte atual (!cat).
+4. `o nal kor` (Análise): Identifica obesidade semântica e redundâncias.
+5. `vi ran pur` (Poda): Executa Ockham-Purifier para destilar a lógica.
+6. `ka nek pii` (Âncora): Injeta restrição de segurança PII. Bloqueio automático se houver desvios.
+7. `vi ven val` (Validar): Invocação do Critic-Validator (Consenso 2/3) + !npm test.
+8. `sis tot` (Otimização): Sobrescrita física e geração de snapshot.
 
 ---
+
+**ESTADO: SOBERANIA ALCANÇADA. FUNDAMENTO ETEMENANQUI ESTABELECIDO.**
 
 **GENESIS ENGINE v1.1 · Sovereign Protocol · MIT License · CNGSM 2026**
 *Propriedade CNGSM · Cloves Nascimento · Arquiteto de Ecossistemas Cognitivos*
