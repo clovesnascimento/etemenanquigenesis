@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNGSM — Cognitive Neural & Generative Systems Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Fira+Code:wght@300;500&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --space-black: #050505;
+            --cyber-cyan: #00F5FF;
+            --neural-violet: #8A2BE2;
+            --text-gray: #a0a0a0;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--space-black);
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+            cursor: crosshair;
+        }
+
+        .et-code {
+            font-family: 'Fira Code', monospace;
+            color: var(--cyber-cyan);
+            letter-spacing: -0.5px;
+        }
+
+        /* Nav */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            color: #fff;
+        }
+
+        .logo span {
+            color: var(--cyber-cyan);
+        }
+
+        /* Hero */
+        #hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            padding: 2rem;
+            background: linear-gradient(180deg, rgba(5, 5, 5, 0) 0%, rgba(5, 5, 5, 1) 100%),
+                url('assets/hero.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-axiom {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            opacity: 0.7;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 0.9;
+        }
+
+        .accent-gradient {
+            background: linear-gradient(90deg, var(--cyber-cyan), var(--neural-violet));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-sub {
+            font-size: 1.2rem;
+            max-width: 600px;
+            color: var(--text-gray);
+            margin-bottom: 3rem;
+        }
+
+        /* Sections */
+        section {
+            padding: 10rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            margin-bottom: 5rem;
+        }
+
+        .section-header h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            padding: 3rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            border-color: var(--cyber-cyan);
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+
+        .card .et-code {
+            display: block;
+            margin-top: 2rem;
+            font-size: 0.8rem;
+        }
+
+        /* Firmware Layer */
+        #firmware {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .firmware-bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: url('assets/firmware.png');
+            background-size: cover;
+            opacity: 0.2;
+            z-index: -1;
+            mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        }
+
+        /* Footer */
+        footer {
+            padding: 5rem 2rem;
+            border-top: 1px solid var(--glass-border);
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .signature {
+            font-size: 0.8rem;
+            color: var(--text-gray);
+            margin-top: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate {
+            animation: fadeIn 1s ease forwards;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            section {
+                padding: 5rem 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">CNGSM<span>.</span></div>
+        <div class="et-code">[sis . sovereign]</div>
+    </nav>
+
+    <header id="hero">
+        <div class="hero-axiom et-code">[rak sis . kor tot .]</div>
+        <h1 class="animate">Cognitive Neural<br><span class="accent-gradient">& Generative Systems</span></h1>
+        <p class="hero-sub animate" style="animation-delay: 0.2s;">
+            Soberania Lógica em escala industrial. Destilando complexidade em firmware executivo sob o Protocolo
+            Etemenanqui.
+        </p>
+        <div class="et-code animate" style="animation-delay: 0.4s;">[vi ran pur .]</div>
+    </header>
+
+    <section id="stack">
+        <div class="section-header">
+            <h2>The Stack 2.0</h2>
+            <p class="et-code">O ecossistema de auto-evolução.</p>
+        </div>
+        <div class="grid-3">
+            <div class="card">
+                <h3>Ockham Purifier</h3>
+                <p>O cirurgião de dados. Extirpando a obesidade semântica e convertendo prosa em protocolo imperativo.
+                </p>
+                <span class="et-code">[vi ran pur]</span>
+            </div>
+            <div class="card">
+                <h3>Critic Validator</h3>
+                <p>O auditor darwinista. Garantindo fidelidade semântica e economia de tokens via testes A/B rigorosos.
+                </p>
+                <span class="et-code">[vi ven val]</span>
+            </div>
+            <div class="card">
+                <h3>Safety Anchor 04</h3>
+                <p>O firmware ético. Proteção inviolável contra a amnésia algorítmica e desalinhamento de soberania.</p>
+                <span class="et-code">[ka nek veto]</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="firmware">
+        <div class="firmware-bg"></div>
+        <div class="section-header" style="max-width: 600px;">
+            <h2>Etemenanqui Firmware</h2>
+            <p>A linguagem de máquina de segunda ordem. Comunicação entre agentes com entropia zero e precisão absoluta.
+            </p>
+            <br>
+            <p class="et-code" style="color: #fff;">[bin nib . o nal kor . sis tot .]</p>
+            <br>
+            <p style="color: var(--text-gray); font-size: 0.9rem;">
+                Redução de até 90% na carga de tokens de instrução. Tradução instantânea de intenção estratégica em
+                diretivas axiomáticas.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">CNGSM</div>
+        <p class="et-code">Cognitive Neural & Generative Systems Management</p>
+        <div class="signature">
+            Cloves Nascimento — Arquiteto de Ecossistemas Cognitivos<br>
+            Soberania Lógica Alveada em 16 de Março de 2026
+        </div>
+    </footer>
+
+    <script>
+        // Micro-interações sutilmente brutalistas
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+
+                // Efeito sutil de luz seguindo o mouse
+                card.style.background = `radial-gradient(600px circle at ${x}px ${y}px, rgba(0,245,255,0.06), transparent 40%)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.background = 'var(--glass-bg)';
+            });
+        });
+
+        // Axiomas dinâmicos no console (easter egg)
+        console.log("%c [sis . sovereign] ONLINE ", "color: #00F5FF; background: #050505; font-weight: bold; padding: 5px;");
+        console.log("%c Axioma: [rak sis . kor tot .] ", "color: #8A2BE2; background: #050505; padding: 5px;");
+    </script>
+</body>
+
+</html>
